@@ -1,0 +1,9 @@
+services:
+  front:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./dev:/home
+    working_dir: /home
+    tty: true
